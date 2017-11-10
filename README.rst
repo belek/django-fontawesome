@@ -1,21 +1,10 @@
 ==================
-django-fontawesome
+Disclaimer
 ==================
 
-.. image:: https://badge.fury.io/py/django-fontawesome.svg
-    :target: http://badge.fury.io/py/django-fontawesome
-
-
-django-fontawesome is a `Django <https://www.djangoproject.com>`_ app that provides a couple of Fontawesome/Django related utilities, namely:
-
-- an ``IconField`` to associate Fontawesome icons with model instances
-- templatetags to render Fontawesome icons
-
-also included:
-
-- admin support for the ``IconField``
-- fr locale translation
-
+This package is basically a `django-fontawesome <https://github.com/atiberghien/django-fontawesome>`_ fork with support of latest django, uploaded to PyPi.
+Reason of creating this repo was sadly ignored `merge request <https://github.com/redouane/django-fontawesome/pull/32>`_.
+All the credits goes to authors of source repository and merge request.
 
 Requirements
 ============
@@ -44,7 +33,7 @@ Installation / Usage
 
 0. Install via pip::
 
-    pip install django-fontawesome
+    pip install django-f-awesome
 
 
 1. Add 'fontawesome' to your installed apps setting like this::
@@ -100,43 +89,5 @@ Here's what the widget looks like in the admin panel:
          </ul>
 
 
-5. profit!!!
 
 .. |admin-widget| image:: docs/images/admin-widget.png
-
-changelog
-=========
-
-0.3.1 - Dec 19, 2016
---------------------
-- added unicode literals import for cases where icon title attribute uses non ascii chars
-
-
-Nov 28, 2016
-------------
-- now suppots django 1.8+
-- python3 supported, supposedly
-- relative import issues fixed
-- updated icon mapping for fontawesome 4.7
-- tabular and stacked inlines now supported
-- other small fixes
-- new PyPI release (0.3)
-
-Jan 28, 2016
-------------
-- updated icon mapping file (icons.yml) for fontawesome 4.5.0
-- new keyword arg for fontawesome_icon template tag: title
-
-Dec 17, 2015
-------------
-- Updated locally shipped fontawesome to 4.5.0
-- fontawesome_icon's output is now marked safe
-
-Sep 11, 2015
-------------
-- Updated locally shipped fontawesome to 4.4.0
-
-Feb 27, 2015
-------------
-- added two new keyword argument to the fontawesome_icon template tag, color and border
-- FONTAWESOME_PREFIX setting is now taken into account when rendering icons using the fontawesome_icon template tag

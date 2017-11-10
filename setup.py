@@ -7,16 +7,14 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-fontawesome',
-    version='0.3.1',
+    name='django-f-awesome',
+    version='0.3.2',
     packages=['fontawesome'],
     include_package_data=True,
     license='BSD License',
     description='a django app that provides a couple of fontawesome/django related utilities.',
     long_description=README,
-    url='https://www.github.com/redouane/django-fontawesome',
-    author='Redouane Zait',
-    author_email='redouanezait@gmail.com',
+    url='https://github.com/belek/django-fontawesome',
     install_requires=['PyYAML'],
     classifiers=[
         'Environment :: Web Environment',
